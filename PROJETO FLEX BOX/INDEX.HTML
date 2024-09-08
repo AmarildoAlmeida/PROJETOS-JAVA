@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <title>Projeto Display flex</title>
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <h1> CodeClub Convert Money</h1>
+        </header>
+        <main>
+            <label>
+
+                Converter <b> de </b>  
+                <select>
+
+                    <option> R$ Real Brasileiro</option>
+                </select>
+            </label>
+            <label>
+                Converter <b> para</b>
+                <select id="currency-select">
+                    <option>U$$ Dólar americano</option>
+                    <option> £ Euro</option>
+                </select>
+            </label>
+            <label>
+                Valor
+                <input id="input=real"placeholder="R$10.000,00">
+            </label>
+            <button id="convert-button" type="button"> Converter</button>
+            <section>
+                <div class="currency-container">
+                    <img src="./bandeira brasil.jpeg" alt="bandeira do brasil">
+                    <p class="currency-name">Real</p>
+                    <p class="currency-value" id="real-value-text">R$0,00</p>
+                </div>
+                <img class="arrow-img" src="./seta.png" alt="seta">
+                <div class="currency-container">
+                    <img src="./bandeira americana.jpeg" id="currency-img" alt="americana">
+                    <p class="currency-name" id="currency-name">Dólar americano</p>
+                    <p class="currency-value" id="currency-value-text"> U$$,0,00</p>
+                </div>
+            </section>
+
+
+
+        </main>
+    </div>
+</body>
+
+</html>

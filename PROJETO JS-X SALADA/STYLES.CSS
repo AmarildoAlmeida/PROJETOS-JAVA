@@ -1,92 +1,87 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap');
-*{
+
+* {
     margin: 0;
-    padding:0;
+    padding: 0;
     box-sizing: border-box;
     font-family: "Poppins", sans-serif;
 }
-body{
+
+body {
     background-color: black;
-} 
-.container-button{
-    margin:38px 0;
-    display:flex;
+}
+
+.container-button {
+    margin: 38px 0;
+    display: flex;
     justify-content: center;
     align-items: center;
     gap: 20px;
 }
-button{
+
+button {
     background-color: #7fff00;
-    border:none;
+    border: none;
     border-radius: 5px;
-    color:black;
+    color: black;
     padding: 10px;
-    cursor:pointer;
+    cursor: pointer;
     font-weight: bold;
     width: 110px;
 }
-button:hover{
+
+button:hover {
     opacity: 0.8;
 
 }
-ul{
-    list-style: none;
-    display:grid;
-    grid-template-columns: 200px 200px 200px;
-    gap:20px;
-    justify-content: center;
-    width: 50%; 
-}
-li{
-    border:2px solid #8133ff;
-    border-radius: 5px;
-    padding: 5px;
-    width: 50%; 
 
-}
-img{
-    width: 50%; 
-    border-radius: 5px;
-}
-p{
-    color: #fffF;
-}
-.item-price{
-    font-weight: bold;
-    color:#7fff00;
-}
-@media screen and (max-width:640px){
-    .container-button:{
-        height: 30%;
-        width: 30%;
-        padding: 0;
-        margin: 0;
-        display: ;
-    }
-    .item-price{
-        height: 50%;
-        width: 50%;
-        padding: 0;
-        margin: 0;
-    }
-ul{
-    height: 30%;
-    width: 30%;
-    padding: 0;
-    margin: 0;
-}  
-img{
-    height: auto;
-    width: 100%;
-}
-li{
-    height: 50%;
-    width: 50%;   
-}
-div{
-    height: 50%;
+ul {
+    list-style: none;
+    display: grid;
+    grid-template-columns: 200px 200px 200px;
+    gap: 20px;
+    justify-content: center;
     width: 50%;
 }
 
+li {
+    border: 2px solid #8133ff;
+    border-radius: 5px;
+    padding: 5px;
+    width: 50%;
+
+}
+
+img {
+    width: 50%;
+    border-radius: 5px;
+}
+
+p {
+    color: #fffF;
+}
+
+.item-price {
+    font-weight: bold;
+    color: #7fff00;
+}
+
+@media (max-width:640px) {
+    .container-button{
+        gap: 10px;
+    }
+button{
+    width:90px;
+    padding: 6px;
+}
+    ul {
+
+        width: 100%;
+        grid-template-columns: 1fr;
+    }
+
+    img {
+        width: 100%;
+    }
 
 }
